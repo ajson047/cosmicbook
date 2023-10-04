@@ -1,0 +1,125 @@
+/* Reset default styles and set background colors */
+h2 {
+  text-align: center;
+}
+
+body {
+  font-family: 'Garamond', Serif;
+  margin: 0;
+  padding: 0;
+  background-color: #4d3835; /* Rusty red background color */
+  color: #fff;
+}
+
+p {
+  text-align: center;
+}
+
+header {
+  background-color: #743f3e; /* Darker rusty red for the header */
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav {
+  background-color: #743f3e; /* Darker rusty red for the navigation bar */
+  padding: 0.5em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1em;
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #632d2c; /* Darken the button-like feel on hover */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Style the hero section */
+.hero {
+  background-image: url('/images/newastro.jpeg'); /* Placeholder image */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 5em;
+}
+
+.valles-image,
+.olympus,
+.hellas,
+.polar,
+.cave {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta {
+  background-color: #f00; /* Red color for the call-to-action button */
+  color: #fff;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+/* Style the places to visit section */
+#places-to-visit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  gap: 20px; /* Add some space between items */
+}
+
+.place {
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px; /* Add margin to each place for better spacing */
+  text-align: center; /* Center the content within each place */
+  display: flex;
+  flex-direction: column;
+}
+
+.place img {
+  order: 1; /* Set the order of the image to 1 (default) */
+}
+
+.place h3 {
+  margin-top: 0; /* Remove default margin for h3 */
+}
+
+.place p {
+  order: -1; /* Set the order of the paragraph to -1 (before the image) */
+}
+
+/* Style the footer */
+footer {
+  background-color: #d9534f; /* Red color for the footer */
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
