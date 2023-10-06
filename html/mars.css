@@ -54,7 +54,7 @@ nav a:hover {
 
 /* Style the hero section */
 .hero {
-  background-image: url('/images/newastro.jpeg'); /* Placeholder image */
+  background-image: url('images/newastro.jpeg'); /* Placeholder image */
   background-size: cover;
   background-position: center;
   color: #fff;
