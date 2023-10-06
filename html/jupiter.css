@@ -1,12 +1,10 @@
-
-/* jupiter.css */
 body {
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 20;
     background: linear-gradient(45deg, #1d2731, #3a4b6b);
     color: white;
 }
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -15,6 +13,7 @@ body {
     text-align: center;
     padding: 100px 0;
     background: url('images/jupiter.jpeg') center/cover no-repeat;
+    font-family: font2;
 }
 .hero h2 {
     font-size: 2.5em;
@@ -72,6 +71,7 @@ body {
 }
 .place:nth-child(even) .description {
     order: 1;
+    font-size: 20px;
 }
 .place.reverse {
     flex-direction: row-reverse;
@@ -84,9 +84,28 @@ body {
 }
 .places-to-visit .description {
     flex: 1;
+    font-size: 20px;
 }
 .places-to-visit h3 {
     color: #dd6e42;
+}
+@font-face{
+    font-family:myfont;
+    src:url(font/Starjedi.ttf)
+}
+@font-face{
+    font-family:font2;
+    src:url(font/Transformers\ Movie.ttf)
+}
+@font-face{
+    font-family:font3;
+    src:url(font/RobotoSlab-VariableFont_wght.ttf)
+}
+h1{
+    font-family: myfont;
+}
+p{
+    font-family: font3;
 }
 footer {
     background-color: #333;
@@ -97,7 +116,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* Responsive Styles */
+
 @media screen and (max-width: 600px) {
     .navbar a {
         float: none;
@@ -115,6 +134,7 @@ footer {
 /* Add animation styles for elements with the .animate-on-scroll class */
 .animate-on-scroll {
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    font-size: 20px;
 }
 /* Fade-out animation when the element is not in view */
 .animate-on-scroll:not(.animated) {
