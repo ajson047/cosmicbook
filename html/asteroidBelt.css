@@ -124,3 +124,22 @@ footer {
 .background{
     background: url('images/background.jpg') center/cover no-repeat;;
 }
+
+@font-face{
+    font-family:myfont;
+    src:url(font/Starjedi.ttf)
+}
+@font-face{
+    font-family:font2;
+    src:url(font/Transformers\ Movie.ttf)
+}
+@font-face{
+    font-family:font3;
+    src:url(font/RobotoSlab-VariableFont_wght.ttf)
+}
+h1{
+    font-family: myfont;
+}
+p{
+    font-family: font3;
+}
