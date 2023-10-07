@@ -215,7 +215,7 @@ img.moon-light{
     position: relative;
 }
 
-.flight-list{
+.flight-list .container{
     margin-top: 6rem;
     display: flex;
     justify-content: center;
