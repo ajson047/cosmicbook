@@ -123,11 +123,12 @@ header .navlist{
     line-height: 28px;
     border-radius: 5px;
     padding: 0 20px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
     transition: all .3s ease;
     white-space: nowrap;
     display: inline-block;
+    color: #000;
 }
 
 .loginbtn:hover{
@@ -151,6 +152,7 @@ section{
 max-width: 100%;
 width: 400px;
 height: auto;
+animation: floatImg 4s ease-in-out infinite;
 }
 
 .earth_rotate{
@@ -239,29 +241,118 @@ img.moon-light{
 .flight-box img{
     width: 120px;
     margin: -4rem auto 0 auto;
+    animation: floatImg 6s ease-in-out infinite;
+    filter: drop-shadow(0 0 .5rem #1797ff);
+    border-radius: 50%;
+}
+
+
+.container .flight-box h2{
+    color: var(--hover-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin:0;
+}
+
+
+.flight-box p{
+    color: #dddcdc;
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+
+.flight-box .loginbtn{
+    margin-top: 1rem;
+    height: 32px;
+    line-height: 32px;
+    color: #000;
+    font-size: .8rem ;
+    font-weight: 700;
 }
 
 
 
 
+.mission-history{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.img-mission{
+    position: relative;
+    width: 600px;
+}
+.circle-animate{
+
+    top: 30%;
+    width: 200px;
+    height: 200px;
+    background: var(--hover-color);
+    border-radius: 50%;
+    box-shadow: var(--neon-box-shadow);
+    text-align: right;
+}
+
+
+.circle-animate spam{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+    opacity: .4;
+    animation: circleAnimate 4s ease-out infinite;
+    animation-delay: calc(1s * var(--i));
+}
+
+
+
+.img-mission img{
+    width: 200px;
+    height: auto;
+    animation: floatImg 4s ease-in-out infinite;
+}
+
+.text-mission{
+    color: #fff;
+}
+
+.text-mission-h3{
+    font-size: 2.5rem;
+    text-shadow: 2px 1px 1px #474747;
+}
+
+
+
+.text-mission p{
+    margin: 1rem auto;
+    line-height: 2rem;
+}
+
+.text-mission .mission-btn a{
+    margin-top: 1rem;
+    height: 35px;
+    line-height: 35px;
+}
 
 
 
 
+.shop .flight-box{
+    text-align: left;
+    width: 210px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.shop .flight-box img{
+    animation: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    filter:none;
+}
 
 
 
@@ -273,6 +364,18 @@ img.moon-light{
         transform: rotate(360deg);
     }
 }
+@keyframes floatImg{
+    0%{
+        transform: translateY(0);
+    }
 
+    50%{
+        transform: translateY(-14px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
 
 
