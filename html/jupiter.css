@@ -109,11 +109,19 @@ body {
     src:url(font/Transformers\ Movie.ttf)
 }
 @font-face{
+    font-family:h2font;
+    src:url(font/Square.ttf)
+}
+@font-face{
     font-family:font3;
     src:url(font/RobotoSlab-VariableFont_wght.ttf)
 }
 h1{
     font-family: myfont;
+}
+h2{
+    font-family: h2font;
+    font-size: 30px;
 }
 p{
     font-family: font3;
