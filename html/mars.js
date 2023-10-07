@@ -1,3 +1,5 @@
+// mars.js
+
 document.addEventListener("DOMContentLoaded", function () {
     const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
 
