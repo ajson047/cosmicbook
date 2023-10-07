@@ -5,7 +5,7 @@ body {
     rgba(0, 0, 0, 0.993), 
     rgba(47, 24, 150, 0.641)), url(
 'images/Starry_night2.jpg');
-    color: rgb(154, 109, 26);
+    color: rgb(255, 255, 255);
 }
 #Heading_Original{
 }
@@ -17,16 +17,24 @@ body {
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: url('images/saturnBackground.jpeg') center/cover no-repeat;
+    background-image: linear-gradient(100deg, 
+    rgba(0, 0, 0, 0.993), 
+    rgba(0, 0, 0, 0.264)), url(
+'images/Sat_bg.jpg');
+background-position: center;
+background-size: cover;
+   
     font-family: font2;
 }
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 .hero p {
     font-size: 1.2em;
     margin-bottom: 40px;
+    color: #ffffff;
 }
 .cta {
     display: inline-block;
