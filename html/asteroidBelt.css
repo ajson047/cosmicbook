@@ -1,7 +1,5 @@
-
-/* jupiter.css */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: font3;
     margin: 0;
     padding: 0;
     background: linear-gradient(45deg, #1d2731, #3a4b6b);
@@ -14,11 +12,13 @@ body {
 .hero {
     text-align: center;
     padding: 100px 0;
-    background: url('images/asteroidBeltCover.jpeg') center/cover no-repeat;
+    background: url('images/astriodhero.jpg') center/cover no-repeat;
+    font-family: font2;
 }
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    font-family: font2;
 }
 .hero p {
     font-size: 1.2em;
@@ -84,6 +84,7 @@ body {
 }
 .places-to-visit .description {
     flex: 1;
+    font-size: 20px;
 }
 .places-to-visit h3 {
     color: #dd6e42;
@@ -115,6 +116,7 @@ footer {
 /* Add animation styles for elements with the .animate-on-scroll class */
 .animate-on-scroll {
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    font-size: 20px;
 }
 /* Fade-out animation when the element is not in view */
 .animate-on-scroll:not(.animated) {
