@@ -85,6 +85,14 @@ address {
   margin-bottom: 1rem;
   font-style: normal;
   line-height: inherit; }
+#home{
+
+  background-image: linear-gradient(100deg, 
+  rgba(0, 0, 0, 0.993), 
+  rgba(2, 1, 4, 0.416)), url(
+'images/aster_seamless.jpg');
+background-size: contain;
+}
 
 ol,
 ul,
