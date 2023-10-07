@@ -17,6 +17,20 @@
     --index: calc( 1vw+1vh );
 }
 
+::-webkit-scrollbar{
+    height: 0;
+    width: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--hover-color);
+    border-radius: 5rem;
+}
+
 body{
     font-family: "Outfit",sans-serif;
     background-image: url(/cosmicbook/html/images/aster_seamless.jpg);/*img background*/
@@ -113,9 +127,152 @@ header .navlist{
     letter-spacing: 1px;
     transition: all .3s ease;
     white-space: nowrap;
+    display: inline-block;
 }
 
 .loginbtn:hover{
     background: linear-gradient(180deg, #70efbf 0, #21e69a 100%);
     box-shadow: 0 3px 9px #25b981;
 }
+
+#menu-icon{
+    color: var(--hover-color);
+    font-size: 2.5rem;
+    display: none;
+}
+
+section{
+    padding: 100px 12%;
+}
+
+/*home section css*/
+
+.home-img.hero{
+max-width: 100%;
+width: 400px;
+height: auto;
+}
+
+.earth_rotate{
+    width: 100%;
+}
+
+.earth-rotate img.earth{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: calc(var(--index)*45);
+    animation: rotate 300s infinite linear;
+}
+
+.home{
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2,1fr);
+    color: #fff;
+    width: 100%;
+}
+
+.home-text h1,h2{
+    font-size: calc(var(--index)*2);
+    margin-bottom: 1rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #474747;
+}
+
+
+.home-text .loginbtn{
+    margin-top: 1rem;
+    height: 35px;
+    line-height: 35px;
+}
+
+span{
+    color: var(--hover-color);
+}
+
+.home-img{
+    position: relative;
+}
+
+img.moon-light{
+    position: absolute;
+    left: 0;
+    mix-blend-mode: screen;
+    width: 90px;
+}
+
+
+
+
+.flight-list{
+    position: relative;
+}
+
+.flight-list{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.container .flight-box{
+    width: 200px;
+    padding: 2rem 1.5rem 2rem;
+    text-align: center;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    color: #fff;
+    z-index: 2;
+    margin: 2rem .5rem;
+}
+
+
+.flight-box img{
+    width: 120px;
+    margin: -4rem auto 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
