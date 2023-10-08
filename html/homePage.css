@@ -1,14 +1,16 @@
 @import url();
 
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
     list-style: none;
+
 }
+
 
 :root {
     --color-text: #cdc6c3;
@@ -33,12 +35,13 @@
 
 body {
     font-family: "Outfit", sans-serif;
-    background-image: url(/cosmicbook/html/images/background.jpg);
+    background-color: rgb(1, 1, 51);
     /*img background*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow-x: hidden;
+    font-size: 20px;
 }
 
 a {
@@ -64,6 +67,7 @@ header {
     font-weight: 600;
     font-size: 22px;
     color: var(--hover-color);
+    padding-bottom: 40px;
 }
 
 .logo img {
@@ -182,7 +186,7 @@ section {
 
 .home-text h1,
 h2 {
-    font-size: calc(var(--index)*2);
+    font-size: 50px;
     margin-bottom: 1rem;
     font-weight: 800;
     text-shadow: 1px 1px 1px #474747;
@@ -224,6 +228,7 @@ img.moon-light {
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+    
 }
 
 .container .flight-box {
@@ -240,6 +245,10 @@ img.moon-light {
     margin: 2rem .5rem;
 }
 
+.flight-box{
+    background-color: #25252589;
+    border-radius: 10px;
+}
 
 .flight-box img {
     width: 120px;
@@ -252,20 +261,22 @@ img.moon-light {
 
 .container .flight-box h2 {
     color: var(--hover-color);
-    font-size: 1.5rem;
+    font-size: 10px;
     font-weight: 700;
     margin: 0;
 }
 
 
 .flight-box p {
-    color: #dddcdc;
+    color: white;
     line-height: 1.5rem;
-    font-size: .9rem;
+    font-size: 18px;
+}
+.flight-box h1{
+    color: #70efbf;
 }
 
-
-.flight-box .marsBtn {
+.flight-box .loginbtn {
     margin-top: 1rem;
     height: 32px;
     line-height: 32px;
@@ -376,7 +387,7 @@ img.moon-light {
 }
 
 
-.shop-btn.marsBtn {
+.shop-btn.loginbtn {
     height: 40px;
     line-height: 40px;
 }
@@ -397,7 +408,7 @@ img.moon-light {
 
 
 footer {
-    width: 100px;
+    width: 100%;
     height: auto;
     background: rgba(0, 0, 0, 0.7);
     padding: 3rem 12%;
@@ -436,11 +447,16 @@ footer {
 }
 
 .social-media li {
-    margin-right: 1rem;
+    margin-right: 10px;
+    width: 20px;
 }
 
+.social-media{
+    display: flex;
+    gap:10px;
+}
 .quick-menu li {
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .quick-menu li a:hover {
@@ -489,17 +505,17 @@ header.sticky {
 
 
 .scroll-left {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(10px);
 }
 
 .scroll-right {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(-10px);
 }
 
 .scroll-top {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(-50px);
 }
 
@@ -510,6 +526,10 @@ header.sticky {
     transition: all 2s;
 }
 
+
+.price p{
+    text-align: left;
+}
 
 
 
@@ -594,6 +614,7 @@ header.sticky {
     .experience {
         flex-direction: column;
         height: 100%;
+        padding-top: 30px;
     }
 
     .img-mission {
